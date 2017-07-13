@@ -1,0 +1,22 @@
+FontName (Minion-Italic)
+FullName (Minion Italic)
+AppleName (Minion-Italic)
+FamilyName (Minion)
+Version (002.000)
+isFixedPitch false
+CharacterSet (custom)
+Encoding (SpecificEncoding)
+Pi true
+ItalicAngle -12
+CapHeight 650
+UnderlinePosition -100
+UnderlineThickness 50
+StemWidth 78
+Serif false
+MSMenuName (Minion)
+VPMenuName (Minion)
+WORDMenuName (Minion)
+VPStyle (I)
+WindowsCharSet 200
+WindowsFirstChar 32
+WindowsLastChar 255
