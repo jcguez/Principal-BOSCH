@@ -8,7 +8,7 @@
     
  
  <script type="text/javascript">
-document.oncontextmenu = function(){return false;}
+// document.oncontextmenu = function(){return false;}
 </script>
     <meta charset="utf-8">
    <title>Bosch Car Service Albatros Racing</title>
@@ -914,7 +914,7 @@ document.oncontextmenu = function(){return false;}
         </section>
 
         <!--Find service-->
-        <section class="find-service sec-pdd-90">
+        <section id="sec-contact" class="find-service sec-pdd-90">
             <div class="auto-container">
                 <div class="content-outer">
                     <!--Image-->
@@ -930,14 +930,14 @@ document.oncontextmenu = function(){return false;}
                                 </div>
 
                                 <div class="default-form">
-                                    <form method="post" action="contact.html">
+                                    <form method="post" action="sendemail2.php">
 
                                         <div class="form-group">
-                                            <input type="text" name="name" value="" placeholder="Su nombre">
+                                            <input type="text" name="username" value="" placeholder="Su nombre">
                                         </div>
 
                                         <div class="form-group">
-                                            <select name="category">
+                                            <select name="service">
                                                 <option>Selecciona tu servicio</option>
                                                 <option>Mantenimiento Preventivo</option>
                                                 <option>Lubricación</option>
@@ -956,7 +956,7 @@ document.oncontextmenu = function(){return false;}
                                         </div>
 
                                         <div class="form-group">
-                                            <input type="text" name="phone" value="" placeholder="Fecha servicio (sujeto a disponibilidad)" id="datepicker">
+                                            <input type="text" name="date" value="" placeholder="Fecha servicio (sujeto a disponibilidad)" id="datepicker">
                                         </div>
 
                                         <div class="form-group">
@@ -1297,6 +1297,17 @@ document.oncontextmenu = function(){return false;}
     <script src="js/jquery-ui.min.js"></script>
     <script src="js/color-settings.js"></script>
     <script src="js/script.js"></script>
+    
+    <script>
+        $(document).ready(function () {
+            var loc = document.location.toString();
+            console.log(loc);
+            if ( loc.search("#sec-contact") ){
+                document.location.href = "#sec-contact";
+            }
+        });
+    </script>
+
 </body>
 
 </html>
