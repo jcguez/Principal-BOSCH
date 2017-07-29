@@ -8,7 +8,7 @@
     
  
  <script type="text/javascript">
-// document.oncontextmenu = function(){return false;}
+document.oncontextmenu = function(){return false;}
 </script>
     <meta charset="utf-8">
    <title>Bosch Car Service Albatros Racing</title>
@@ -38,21 +38,35 @@
         <header class="main-header">
 
             <!--Header-Upper-->
-            <div class="header-upper">
+            <div class="header-upper" style="padding-top: 10px;">
+
+                <!-- Container Shadow logo -->
+                <div class="cont-sha-logo" style="position: absolute; left: 0; top: 24px; background-color: #000; width: 100vw; height: 38px; z-index: -2; background: rgba(88,137,163,1); background: -moz-linear-gradient( rgba(88,137,163,1) 0%, rgba(0,48,75,1) 100%); background: -webkit-gradient(left top, right top, color-stop(0%, rgba(88,137,163,1)), color-stop(100%, rgba(0,48,75,1))); background: -webkit-linear-gradient(rgba(88,137,163,1) 0%, rgba(0,48,75,1) 100%); background: -o-linear-gradient(rgba(88,137,163,1) 0%, rgba(0,48,75,1) 100%); background: -ms-linear-gradient( rgba(88,137,163,1) 0%, rgba(0,48,75,1) 100%);background: linear-gradient(rgba(88,137,163,1) 0%, rgba(0,48,75,1) 100%); filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#5889a3', endColorstr='#00304b', GradientType=1 );">
+                    <p style="margin-left: 170px; margin-bottom: 7px; margin-top: 7px; color: #fff;">Bosch Car Service Albatros Racing</p>
+                </div>
+
                 <div class="auto-container">
                     <div class="clearfix">
 
-                        <div class="pull-left logo-outer">
+                        <div class="pull-left logo-outer" style="position: absolute; z-index: -1; ">
                             <div class="logo">
-                                <a href="index.html"><img src="images/logo.png" alt="" title="Beirut Finance">
+                                <a href="index.html"><img src="images/logo_original.png" alt="" title="Bosch Car Service">
                                 </a>
                             </div>
                         </div>
 
-                        <div class="pull-right upper-right clearfix">
+                        <style>
+                    .fixed-ratio-resize { /* basic responsive img */
+                    max-width: 100%;
+                    height: auto;
+                    width: auto\9; /* IE8 */
+                    }
+                    </style> 
+
+                        <div class="pull-right upper-right clearfix" style="padding-top: 40px; ">
 
                              <!--Info Box-->
-                            <div class="upper-column info-box">
+                            <div class="upper-column info-box" style="font-size: 12.5px; padding-bottom: 0;">
                                 <div class="icon-box"><span class="flaticon-clock"></span>
                                 </div>
                                 Lunes - Viernes: 8:30 - 18:30 <br/>Sábados: 8:30 a 14:30
@@ -60,7 +74,7 @@
                             </div>
 
                             <!--Info Box-->
-                            <div class="upper-column info-box">
+                            <div class="upper-column info-box" style="font-size: 12.5px; padding-bottom: 0;">
                                 <div class="icon-box"><span class="flaticon-location"></span>
                                 </div>
                                 Calzada Norte #89-B Ciudad Granja 
@@ -68,7 +82,7 @@
                             </div>
 
                             <!--Info Box-->
-                            <div class="upper-column info-box">
+                            <div class="upper-column info-box" style="font-size: 12.5px; padding-bottom: 0;">
                                 <div class="icon-box"><span class="flaticon-smartphone-call"></span>
                                 </div>
                                 (01) 33-3627-3001 / 33-3627-3640 / 33-3898-9883
@@ -162,9 +176,15 @@
             <!--Sticky Header-->
             <div class="sticky-header">
                 <div class="auto-container clearfix">
+                    
+                    <!-- Container Shadow logo -->
+                    <div class="cont-sha-logo" style="position: absolute; left: 0; top: 24px; background-color: #000; width: 50vw; height: 38px; z-index: -2; background: rgba(88,137,163,1); background: -moz-linear-gradient( rgba(88,137,163,1) 0%, rgba(0,48,75,1) 100%); background: -webkit-gradient(left top, right top, color-stop(0%, rgba(88,137,163,1)), color-stop(100%, rgba(0,48,75,1))); background: -webkit-linear-gradient(rgba(88,137,163,1) 0%, rgba(0,48,75,1) 100%); background: -o-linear-gradient(rgba(88,137,163,1) 0%, rgba(0,48,75,1) 100%); background: -ms-linear-gradient( rgba(88,137,163,1) 0%, rgba(0,48,75,1) 100%);background: linear-gradient(rgba(88,137,163,1) 0%, rgba(0,48,75,1) 100%); filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#5889a3', endColorstr='#00304b', GradientType=1 );">
+                        <p style="margin-left: 170px; margin-bottom: 2px; margin-top: 2px; color: #fff;">Bosch Car Service</p>
+                    </div>
+
                     <!--Logo-->
                     <div class="logo pull-left">
-                        <a href="index.html" class="img-responsive"><img src="images/logo-small.png" alt="Beirut Finance">
+                        <a href="index.html" class=""><img class="img-responsive" src="images/logo_original.png" alt="Bosch Car Service" style="max-width: 50px;">
                         </a>
                     </div>
 
@@ -405,7 +425,7 @@
                         <div class="progress-levels item-margin-bot-40">
 
                             <!--Skill Box-->
-                                <div class="image-box"><img src="images/icons/motor.png" alt=""><big><strong>   Mantenimiento Preventivo</strong></big>
+                                <div class="image-box"><img  alt=""><big><strong>   Mantenimiento Preventivo</strong></big>
                                 <div class="inner">
                                     <div class="bar">
                                         <div class="bar-innner">
@@ -417,7 +437,7 @@
                             </div> <br>
 
                             <!--Skill Box-->
-                                <div class="image-box"><img src="images/icons/Lubricacion.png" alt=""><big><strong>   Lubricación</strong></big>
+                                <div class="image-box"><img  alt=""><big><strong>   Lubricación</strong></big>
                                 <div class="inner">
                                     <div class="bar">
                                         <div class="bar-innner">
@@ -429,7 +449,7 @@
                             </div> <br>
 
                             <!--Skill Box-->
-                                <div class="image-box"><img src="images/icons/inspeccion.png" alt=""><big><strong>   Inspección de Seguridad</strong></big>
+                                <div class="image-box"><img  alt=""><big><strong>   Inspección de Seguridad</strong></big>
                                 <div class="inner">
                                     <div class="bar">
                                         <div class="bar-innner">
@@ -441,7 +461,7 @@
                             </div> <br>
 
                             <!--Skill Box-->
-                                <div class="image-box"><img src="images/icons/bateria.png" alt=""><big><strong>   Sistema de Carga</strong></big>
+                                <div class="image-box"><img  alt=""><big><strong>   Sistema de Carga</strong></big>
                                 <div class="inner">
                                     <div class="bar">
                                         <div class="bar-innner">
@@ -453,7 +473,7 @@
                             </div> <br>
                     
                              <!--Skill Box-->
-                                <div class="image-box"><img src="images/icons/luces.png" alt=""><big><strong>   Sistema de Iluminación</strong></big>
+                                <div class="image-box"><img  alt=""><big><strong>   Sistema de Iluminación</strong></big>
                                 <div class="inner">
                                     <div class="bar">
                                         <div class="bar-innner">
@@ -465,7 +485,7 @@
                             </div> <br>
 
                             <!--Skill Box-->
-                                <div class="image-box"><img src="images/icons/frenos.png" alt=""><big><strong>   Servicio de Frenos</strong></big>
+                                <div class="image-box"><img  alt=""><big><strong>   Servicio de Frenos</strong></big>
                                 <div class="inner">
                                     <div class="bar">
                                         <div class="bar-innner">
@@ -478,7 +498,7 @@
 
 
                             <!--Skill Box-->
-                                <div class="image-box"><img src="images/icons/llantas.png" alt=""><big><strong>   Servicio A La Rueda</strong></big>>
+                                <div class="image-box"><img  alt=""><big><strong>   Servicio A La Rueda</strong></big>
                                 <div class="inner">
                                     <div class="bar">
                                         <div class="bar-innner">
@@ -576,10 +596,10 @@
                         <!--Team Member-->
                         <div class="team-member">
                             <div class="inner-box">
-                                <div class="upper-left-curved-layer"></div>
-                                <div class="lower-left-curved-layer"></div>
-                                <div class="upper-right-curved-layer"></div>
-                                <div class="lower-right-curved-layer"></div>
+                                <div class="upper-left-layer"></div>
+                                <div class="lower-left-layer"></div>
+                                <div class="upper-right-layer"></div>
+                                <div class="lower-right-layer"></div>
 
                                 <div class="image-box"><img src="images/resource/team-image-1.jpg" alt="">
                                 </div>
@@ -603,10 +623,10 @@
                         <!--Team Member-->
                         <div class="team-member">
                             <div class="inner-box">
-                                <div class="upper-left-curved-layer"></div>
-                                <div class="lower-left-curved-layer"></div>
-                                <div class="upper-right-curved-layer"></div>
-                                <div class="lower-right-curved-layer"></div>
+                                <div class="upper-left-layer"></div>
+                                <div class="lower-left-layer"></div>
+                                <div class="upper-right-layer"></div>
+                                <div class="lower-right-layer"></div>
 
                                 <div class="image-box"><img src="images/resource/team-image-2.jpg" alt="">
                                 </div>
@@ -630,10 +650,10 @@
                         <!--Team Member-->
                         <div class="team-member">
                             <div class="inner-box">
-                                <div class="upper-left-curved-layer"></div>
-                                <div class="lower-left-curved-layer"></div>
-                                <div class="upper-right-curved-layer"></div>
-                                <div class="lower-right-curved-layer"></div>
+                                <div class="upper-left-layer"></div>
+                                <div class="lower-left-layer"></div>
+                                <div class="upper-right-layer"></div>
+                                <div class="lower-right-layer"></div>
 
                                 <div class="image-box"><img src="images/resource/team-image-3.jpg" alt="">
                                 </div>
@@ -657,10 +677,10 @@
                         <!--Team Member-->
                         <div class="team-member">
                             <div class="inner-box">
-                                <div class="upper-left-curved-layer"></div>
-                                <div class="lower-left-curved-layer"></div>
-                                <div class="upper-right-curved-layer"></div>
-                                <div class="lower-right-curved-layer"></div>
+                                <div class="upper-left-layer"></div>
+                                <div class="lower-left-layer"></div>
+                                <div class="upper-right-layer"></div>
+                                <div class="lower-right-layer"></div>
 
                                 <div class="image-box"><img src="images/resource/team-image-4.jpg" alt="">
                                 </div>
@@ -684,10 +704,10 @@
                         <!--Team Member-->
                         <div class="team-member">
                             <div class="inner-box">
-                                <div class="upper-left-curved-layer"></div>
-                                <div class="lower-left-curved-layer"></div>
-                                <div class="upper-right-curved-layer"></div>
-                                <div class="lower-right-curved-layer"></div>
+                                <div class="upper-left-layer"></div>
+                                <div class="lower-left-layer"></div>
+                                <div class="upper-right-layer"></div>
+                                <div class="lower-right-layer"></div>
 
                                 <div class="image-box"><img src="images/resource/team-image-5.jpg" alt="">
                                 </div>
@@ -711,10 +731,10 @@
                         <!--Team Member-->
                         <div class="team-member">
                             <div class="inner-box">
-                                <div class="upper-left-curved-layer"></div>
-                                <div class="lower-left-curved-layer"></div>
-                                <div class="upper-right-curved-layer"></div>
-                                <div class="lower-right-curved-layer"></div>
+                                <div class="upper-left-layer"></div>
+                                <div class="lower-left-layer"></div>
+                                <div class="upper-right-layer"></div>
+                                <div class="lower-right-layer"></div>
 
                                 <div class="image-box"><img src="images/resource/team-image-6.jpg" alt="">
                                 </div>
@@ -738,10 +758,10 @@
                          <!--Team Member-->
                         <div class="team-member">
                             <div class="inner-box">
-                                <div class="upper-left-curved-layer"></div>
-                                <div class="lower-left-curved-layer"></div>
-                                <div class="upper-right-curved-layer"></div>
-                                <div class="lower-right-curved-layer"></div>
+                                <div class="upper-left-layer"></div>
+                                <div class="lower-left-layer"></div>
+                                <div class="upper-right-layer"></div>
+                                <div class="lower-right-layer"></div>
 
                                 <div class="image-box"><img src="images/resource/team-image-7.jpg" alt="">
                                 </div>
@@ -765,10 +785,10 @@
                          <!--Team Member-->
                         <div class="team-member">
                             <div class="inner-box">
-                                <div class="upper-left-curved-layer"></div>
-                                <div class="lower-left-curved-layer"></div>
-                                <div class="upper-right-curved-layer"></div>
-                                <div class="lower-right-curved-layer"></div>
+                                <div class="upper-left-layer"></div>
+                                <div class="lower-left-layer"></div>
+                                <div class="upper-right-layer"></div>
+                                <div class="lower-right-layer"></div>
 
                                 <div class="image-box"><img src="images/resource/team-image-8.jpg" alt="">
                                 </div>
@@ -793,10 +813,10 @@
                          <!--Team Member-->
                         <div class="team-member">
                             <div class="inner-box">
-                                <div class="upper-left-curved-layer"></div>
-                                <div class="lower-left-curved-layer"></div>
-                                <div class="upper-right-curved-layer"></div>
-                                <div class="lower-right-curved-layer"></div>
+                                <div class="upper-left-layer"></div>
+                                <div class="lower-left-layer"></div>
+                                <div class="upper-right-layer"></div>
+                                <div class="lower-right-layer"></div>
 
                                 <div class="image-box"><img src="images/resource/team-image-9.jpg" alt="">
                                 </div>
@@ -820,10 +840,10 @@
                          <!--Team Member-->
                         <div class="team-member">
                             <div class="inner-box">
-                                <div class="upper-left-curved-layer"></div>
-                                <div class="lower-left-curved-layer"></div>
-                                <div class="upper-right-curved-layer"></div>
-                                <div class="lower-right-curved-layer"></div>
+                                <div class="upper-left-layer"></div>
+                                <div class="lower-left-layer"></div>
+                                <div class="upper-right-layer"></div>
+                                <div class="lower-right-layer"></div>
 
                                 <div class="image-box"><img src="images/resource/team-image-10.jpg" alt="">
                                 </div>
@@ -847,10 +867,10 @@
                          <!--Team Member-->
                         <div class="team-member">
                             <div class="inner-box">
-                                <div class="upper-left-curved-layer"></div>
-                                <div class="lower-left-curved-layer"></div>
-                                <div class="upper-right-curved-layer"></div>
-                                <div class="lower-right-curved-layer"></div>
+                                <div class="upper-left-layer"></div>
+                                <div class="lower-left-layer"></div>
+                                <div class="upper-right-layer"></div>
+                                <div class="lower-right-layer"></div>
 
                                 <div class="image-box"><img src="images/resource/team-image-11.jpg" alt="">
                                 </div>
@@ -874,10 +894,10 @@
                          <!--Team Member-->
                         <div class="team-member">
                             <div class="inner-box">
-                                <div class="upper-left-curved-layer"></div>
-                                <div class="lower-left-curved-layer"></div>
-                                <div class="upper-right-curved-layer"></div>
-                                <div class="lower-right-curved-layer"></div>
+                                <div class="upper-left-layer"></div>
+                                <div class="lower-left-layer"></div>
+                                <div class="upper-right-layer"></div>
+                                <div class="lower-right-layer"></div>
 
                                 <div class="image-box"><img src="images/resource/team-image-12.jpg" alt="">
                                 </div>
@@ -914,7 +934,7 @@
         </section>
 
         <!--Find service-->
-        <section id="sec-contact" class="find-service sec-pdd-90">
+        <section class="find-service sec-pdd-90">
             <div class="auto-container">
                 <div class="content-outer">
                     <!--Image-->
@@ -930,14 +950,14 @@
                                 </div>
 
                                 <div class="default-form">
-                                    <form method="post" action="sendemail2.php">
+                                    <form method="post" action="contact.html">
 
                                         <div class="form-group">
-                                            <input type="text" name="username" value="" placeholder="Su nombre">
+                                            <input type="text" name="name" value="" placeholder="Su nombre">
                                         </div>
 
                                         <div class="form-group">
-                                            <select name="service">
+                                            <select name="category">
                                                 <option>Selecciona tu servicio</option>
                                                 <option>Mantenimiento Preventivo</option>
                                                 <option>Lubricación</option>
@@ -956,7 +976,7 @@
                                         </div>
 
                                         <div class="form-group">
-                                            <input type="text" name="date" value="" placeholder="Fecha servicio (sujeto a disponibilidad)" id="datepicker">
+                                            <input type="text" name="phone" value="" placeholder="Fecha servicio (sujeto a disponibilidad)" id="datepicker">
                                         </div>
 
                                         <div class="form-group">
@@ -1159,6 +1179,8 @@
         <!--Main Footer-->
         <footer class="main-footer">
 
+
+
             <!--Widgets Section-->
             <div class="widgets-section">
                 <div class="auto-container">
@@ -1265,12 +1287,7 @@
                 <div class="auto-container">
                  <div class="text">Todos los derechos reservados Servicio Albatros Racing, S. de R.L. de C.V.</div>
 
-                 <li><a href="avisoprivacidad.html" style="color:#000000;"  ><h4> Aviso de Privacidad <h4></a></li>  
-
-                                         <script type="text/javascript" src="https://counter6.freecounter.ovh/private/counter.js?c=jnkccmnnpul33zuehbpf24utjawdnhlr"></script>
-                                        <noscript><a href="https://www.contadorvisitasgratis.com" title="contador de visitas"><img src="https://counter6.freecounter.ovh/private/contadorvisitasgratis.php?c=jnkccmnnpul33zuehbpf24utjawdnhlr" border="0" title="contador de visitas" alt="contador de visitas"></a></noscript> 
-
-                                                          
+                 <li><a href="avisoprivacidad.html" style="color:#000000;"  ><h4> Aviso de Privacidad <h4></a></li>                                                          
                 </div>
 
             </div>
@@ -1297,17 +1314,6 @@
     <script src="js/jquery-ui.min.js"></script>
     <script src="js/color-settings.js"></script>
     <script src="js/script.js"></script>
-    
-    <script>
-        $(document).ready(function () {
-            var loc = document.location.toString();
-            console.log(loc);
-            if ( loc.search("#sec-contact") ){
-                document.location.href = "#sec-contact";
-            }
-        });
-    </script>
-
 </body>
 
 </html>
